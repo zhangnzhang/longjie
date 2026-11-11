@@ -1,0 +1,22 @@
+<title>Longjie</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* Layout: one centered game screen on a night-market ground, a quiet control legend below. */
+:root{--bg:#15121c;--panel:#221d2c;--fg:#f4eedc;--muted:#a79f92;--accent:#e8b640;--line:#3a3346;color-scheme:dark;
+  --display:"Courier New",ui-monospace,Menlo,monospace;--body:ui-monospace,Menlo,Consolas,monospace}
+html,body{height:100%}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);padding-block:16px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;box-sizing:border-box}
+.stage{width:100%;display:flex;justify-content:center}
+#game{image-rendering:pixelated;image-rendering:crisp-edges;max-width:100%;background:#181420;
+  outline:4px solid var(--panel);box-shadow:0 0 0 5px var(--line);display:block}
+#game:focus-visible{box-shadow:0 0 0 5px var(--accent)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:center;font-size:12px;color:var(--muted);letter-spacing:.04em;max-width:720px}
+.legend b{color:var(--accent);font-weight:700;font-family:var(--display)}
+</style>
+<div class="stage"><canvas id="game" width="240" height="160" tabindex="0" aria-label="Longjie game screen"></canvas></div>
+<div class="legend">
+  <span><b>ARROWS / WASD</b> move</span><span><b>Z / SPACE</b> talk, read</span><span><b>X / SHIFT</b> run</span><span><b>ENTER</b> party &amp; bag</span><span><b>M</b> preview market day</span><span><b>N</b> sound on/off</span><span>Needs a keyboard.</span>
+</div>
+<script>/*BUNDLE*/</script>

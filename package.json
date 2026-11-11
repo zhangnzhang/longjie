@@ -1,0 +1,24 @@
+{
+  "name": "longjie",
+  "version": "1.0.0",
+  "description": "A pixel-art monster-catching adventure set in the market town I grew up in. Every creature is grown from a seed.",
+  "scripts": {
+    "test": "node build.mjs && node tools/test.mjs && node tools/story_test.mjs && node tools/capture_test.mjs && node tools/hall_test.mjs",
+    "build": "node build.mjs"
+  },
+  "keywords": [
+    "game",
+    "pixel-art",
+    "procedural-generation",
+    "canvas",
+    "rpg"
+  ],
+  "author": "Johnny",
+  "license": "MIT",
+  "devDependencies": {
+    "@fontsource/press-start-2p": "^5.3.0",
+    "esbuild": "^0.28.2",
+    "playwright": "^1.48.0"
+  },
+  "type": "module"
+}
